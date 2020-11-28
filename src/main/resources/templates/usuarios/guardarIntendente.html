@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title> Agregar Intendente </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{guardar.css}" type="text/css">
+</head>
+<body bgcolor="#269CC8">
+<font color="black" face="arial" size="3" >
+    <h2 class="titulo"> Agregar nuevo Intendente </h2>
+</font>
+<font color="black" face="arial" size="3" >
+
+<form th:object="${intendente}" th:action="@{/intendente/agregar}" method="post">
+    <div class="inten">
+        <label for="nombre"> Nombre : </label>
+        <input th:field="*{nombre}" id="nombre" placeholder="Escribe el nombre de intendente" type="text"
+               class="nombrein">
+    </div>
+    <div class="form-group">
+        <label for="apellido"> Apellido : </label>
+        <input th:field="*{apellido}" id="apellido" placeholder="Escribe el apellido de intendente" type="text"
+               class="apellidoin">
+    </div>
+    <div class="form-group">
+        <label for="direccion"> Dirección : </label>
+        <input th:field="*{direccion}" id="direccion" placeholder="Escribe la dirección de intendente" type="text"
+               class="direccionin">
+    </div>
+
+    <div class="form-group">
+        <label for="telefono"> Teléfono : </label>
+        <input th:field="*{telefono}" id="telefono" placeholder="Escribe el telefono de intendente" type="number"
+               class="telefonoin">
+    </div>
+    <button class="btn btn-success" type="submit">Guardar</button>
+    <a class="btn btn-warning" th:href="@{/intendente/mostrarIntendente}"> Ver todos</a>
+</form>
+    <br>
+<a class="ver" th:href="@{/usuarios/agregar}"> Registrar Profesor </a>
+<br>
+<a class="ver" th:href="@{/alumno/agregar}"> Registrar Alumno </a>
+</font>
+</body>
+</html>

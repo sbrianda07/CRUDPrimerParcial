@@ -1,0 +1,102 @@
+.titulo{
+    text-decoration: none;
+    font-family: "Berlin Sans FB";
+    text-transform: uppercase;
+    font-size: 45px;
+    position: absolute;
+    top:10%;
+    left: 430px;
+}
+.nombreprof{
+    font-family: "Arial Rounded MT Bold";
+    position: absolute;
+    top: 35%;
+    left: 80px;
+}
+
+.apellidop{
+    font-family: "Arial Rounded MT Bold";
+    position: absolute;
+    top: 40%;
+    left: 80px;
+}
+.dirprof{
+    font-family: "Arial Rounded MT Bold";
+    position: absolute;
+    top: 45%;
+    left: 80px;
+}
+.correoprof{
+    font-family: "Arial Rounded MT Bold";
+    position: absolute;
+    top: 50%;
+    left: 80px;
+}
+.telefonoprof{
+    font-family: "Arial Rounded MT Bold";
+    position: absolute;
+    top: 55%;
+    left: 80px;
+}
+
+.botonenviar{
+    text-decoration: none;
+    padding: 10px;
+    font-family: "Berlin Sans FB";
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 80;
+    font-size: 13px;
+    color: white;
+    background-color:#1B6AB1;
+    position: fixed;
+    left: 200px;
+    top: 65%;
+}
+.botonenviar:hover {
+    color: steelblue;
+    background-color: lavender;
+    text-decoration: none;
+}
+.borrarcas{
+    text-decoration: none;
+    padding: 10px;
+    font-family: "Berlin Sans FB";
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 80;
+    font-size: 13px;
+    color: white;
+    background-color:#1B6AB1;
+    position: fixed;
+    left: 114px;
+    top: 80%;
+}
+.borrarcas:hover {
+    color: steelblue;
+    background-color: lavender;
+    text-decoration: none;
+}
+
+.ver{
+    text-decoration: none;
+    padding: 10px;
+    font-family: "Berlin Sans FB";
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 80;
+    font-size: 13px;
+    color: white;
+    background-color:#1B6AB1;
+    position: fixed;
+    left: 189px;
+    top: 73%;
+}
+.ver:hover {
+    color: steelblue;
+    background-color: lavender;
+    text-decoration: none;
+}

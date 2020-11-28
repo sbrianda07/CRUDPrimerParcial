@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title> Agregar Alumno </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{guardar.css}" type="text/css">
+</head>
+<body bgcolor="#269CC8">
+<font color="black" face="arial" size="3" >
+    <h2 class="titulo"> Agregar nuevo Alumno </h2>
+</font>
+<font color="black" face="arial" size="3" >
+
+<form th:object="${alumno}" th:action="@{/alumno/agregar}" method="post">
+    <div class="nom">
+        <label for="nombre"> Nombre : </label>
+        <input th:field="*{nombre}" id="nombre" placeholder="Escribe el nombre de alumno" type="text"
+               class="nombreal">
+    </div>
+    <div class="form-group">
+        <label for="apellido"> Apellido : </label>
+        <input th:field="*{apellido}" id="apellido" placeholder="Escribe el apellido de alumno" type="text"
+               class="apellidoal">
+    </div>
+    <div class="form-group">
+        <label for="direccion"> Dirección : </label>
+        <input th:field="*{direccion}" id="direccion" placeholder="Escribe la dirección de alumno" type="text"
+               class="direccional">
+    </div>
+    <div class="form-group">
+        <label for="correo"> Correo electrónico : </label>
+        <input th:field="*{correo}" id="correo" placeholder="Escribe el correo de alumno" type="text"
+               class="correoal">
+    </div>
+    <div class="form-group">
+        <label for="telefono"> Teléfono : </label>
+        <input th:field="*{telefono}" id="telefono" placeholder="Escribe el telefono de alumno" type="number"
+               class="telefonoal">
+    </div>
+    <button class="btn btn-success" type="submit">Guardar</button>
+    <a class="ver" th:href="@{/alumno/mostrarAlumno}"> Ver todos </a>
+</form>
+    <br>
+    <a class="ver" th:href="@{/usuarios/agregar}"> Registrar Profesor </a>
+    <br>
+    <a class="ver" th:href="@{/intendente/agregar}"> Registrar Intendente </a>
+</font>
+</body>
+</html>

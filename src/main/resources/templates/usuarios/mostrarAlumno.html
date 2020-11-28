@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title> Mostrar Alumno </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{guardar.css}" type="text/css">
+</head>
+<body bgcolor="#269CC8">
+<font color="black" face="arial" size="3" >
+    <h2 class="titulo"> Consulta general de Alumno </h2>
+</font>
+<font color="black" face="arial" size="3" >
+    <br><br>
+<table border = "1">
+    <thead>
+    <tr>
+        <th th:text="#{msg.id}" />
+        <th th:text="#{msg.nombre}" />
+        <th th:text="#{msg.apellido}"/>
+        <th th:text="#{msg.direccion}"/>
+        <th th:text="#{msg.correo}"/>
+        <th th:text="#{msg.telefono}"/>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="alumno: ${alumnos}">
+        <td th:text="${alumno.getId()}" />
+        <td th:text="${alumno.getNombre()}" />
+        <td th:text="${alumno.getApellido()}" />
+        <td th:text="${alumno.getDireccion()}" />
+        <td th:text="${alumno.getCorreo()}" />
+        <td th:text="${alumno.getTelefono()}" />
+        <td> <a th:href='@{/alumno/eliminar/{id}(id=${alumno.getId()})}'> Eliminar </a></td>
+        <td> <a th:href='@{/alumno/modificar/{id}(id=${alumno.getId()})}'> Modificar </a></td>
+    </tr>
+    </tbody>
+</table>
+</font>
+</body>
+<a class="btn btn-warning" th:href ="@{/alumno/agregar}"> Agregar Alumno </a>
+</html>
